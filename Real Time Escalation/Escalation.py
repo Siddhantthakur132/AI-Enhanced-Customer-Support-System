@@ -5,7 +5,6 @@ from collections import Counter
 # Function to read Google Sheets
 def read_google_sheet():
     import gspread
-    api_key = "AIzaSyDNcV0rmf7yr5hrgJIzwQQEX5B5GhFMA4A"
     sheet_id = "1955249M_RUnbomqFcGOMJDnxrtwjQpfXFdvDUt5GsAw"
     gc = gspread.api_key(api_key)
     sh = gc.open_by_key(sheet_id)
